@@ -16,6 +16,7 @@ typedef struct
 
 float aplicarAumento (float precio);
 int ordenarVacunaTipoEfectividad(eVacuna lista[], int largo);
+int remplazarCaracter (char cadenaCaracter[], char caracterDos, char caracterTres);
 
 
 int main()
@@ -31,8 +32,29 @@ int main()
     printf("el producto cuesta $ %.2f y con un Aumento del 5%% queda en %.2f \n", precio, aplicarAumento(precio));
 
 
-    //Structura vacuna:
+   /*//caracteres
+   char cadena[10];
+   char caracterDos;
+   char caracterTres;
 
+    printf("Ingrese cadena de caracteres: ");
+    gets(cadena);
+    strlwr(cadena);
+
+    printf("Ingrese el caracter que quiere buscar en la cadena de caracteres: ");
+    fflush(stdin);
+    scanf("%c", &caracterDos);
+    caracter=tolower(caracterDos);
+
+    printf("Ingrese el caracter por el que quiere remplazar en la cadena de caracteres: ");
+    fflush(stdin);
+    scanf("%c", &caracter);
+    caracter=tolower(caracter);
+*/
+
+
+
+ //Structura vacuna:
 
     eVacuna lista[TAM] =
     {
@@ -109,4 +131,28 @@ int ordenarVacunaTipoEfectividad(eVacuna lista[], int largo)
 
 
 
+
+int remplazarCaracter (char cadenaCaracter[], char caracterDos, char caracterTres)
+{
+
+    int cantidad =0;
+    int i = 0;
+    int contador=0;
+
+    if(cadenaCaracter != NULL && caracterDos != NULL && caracterTres != NULL)
+    {
+        while(cadenaCaracter[i] != '\0')
+        {
+            if(cadenaCaracter[i] == caracterDos)
+            {
+
+                cadenaCaracter[i]=caracterTres;
+                contador++;
+            }
+            i++;
+        }
+
+    }
+    return cantidad;
+}
 
