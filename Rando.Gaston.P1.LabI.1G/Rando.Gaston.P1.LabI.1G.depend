@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1635201150 source:e:\tecnicatura de programacion\1er cuatrimestre\programacion y laboratorio\parciales\1er parcial\rando.gaston.p1progi1g_2021\rando.gaston.p1.labi.1g\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+
